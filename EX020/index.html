@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: pink;
+        }
+
+        a::after{
+            content: ' link';
+            text-decoration: none;
+            font-weight: lighter;
+            color: brown;
+        }
+
+        a::before{
+            content: 'link ';
+            color: brown;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/SamuelMartins21" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=onBgcrdW_BE" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/#google_vignette" target="_blank">Site do CursoemVideo</a></li>
+        <li><a href="https://ada.tech/sou-aluno/programas/santander-coders-2023-segunda-edicao?embid=55a427f1-6a76-4ff4-95c1-020351428b78&utm_source=embaixadores&utm_medium=partners&utm_campaign=santander-coders-2&utm_content=057">Santader</a></li>
+    </ul>
+</body>
+
+</html>
