@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{ /*block-level*/
+            /*display = pode alterar a forma da caixa para block/inline*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+
+        a{ /*inline-level*/
+            border: 10px solid red;
+            padding: 10px;
+            margin: 20px 20px 40px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, vitae perspiciatis natus nam ea, sit corrupti magnam sapiente ducimus itaque asperiores porro, <a href="#">qui at quaerat?</a> Incidunt ducimus explicabo nemo dicta?</p>
+</body>
+</html>
