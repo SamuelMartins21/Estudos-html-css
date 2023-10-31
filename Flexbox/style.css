@@ -1,0 +1,61 @@
+.conteiner{
+    background-color: grey;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    /*Alinhamento horizontal*/
+    justify-content: space-around;
+    /*Alinhamento vertical*/ 
+    align-items: center;
+    flex-wrap: wrap; /*Tenta alinhas os elementos da melhor forma possível*/
+}
+
+.item{
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+}
+
+.box{
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+     
+    /*Define de base o quanto ele vai ter de largura*/
+    flex-basis: 30px;
+    
+    flex: 1 1 50px;
+    
+    /*shorthand que engloba 1ºgrow 2ºshrink 3ºbasis*/
+}
+
+#item-1{
+    /*Define como um item vai crescer no layout em comparação aos outros aqui pro exemplo o item-1 sempre vai crescer o 3 que os itens 2 e 3*/
+    flex-grow: 3;
+}
+#item-2{
+    /*Define como um item vai crescer no layout em comparação aos outros aqui pro exemplo o item-1 sempre vai crescer o 3 que os itens 2 e 3*/
+    flex-grow: 1;
+}
+#item-3{
+    /*Define como um item vai crescer no layout em comparação aos outros aqui pro exemplo o item-1 sempre vai crescer o 3 que os itens 2 e 3*/
+    flex-grow: 1;
+    flex-basis: 300px;
+    /*o flex-basis tem prioridade na frente de flex-grow*/
+}
+
+#item-4{
+    /*posso modificar a ordem dos itens*/
+    order: 6;
+}
+#item-5{
+    order: 4;
+}
+#item-6{
+    order: 5
+}
+
+/*Existe o flex-shrink que vai faz o contrário de flex-grow ou seja um item irá diminuir mais em comparação com os outros*/
