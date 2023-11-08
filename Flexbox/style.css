@@ -27,9 +27,8 @@
     /*Define de base o quanto ele vai ter de largura*/
     flex-basis: 30px;
     
-    flex: 1 1 50px;
-    
     /*shorthand que engloba 1ºgrow 2ºshrink 3ºbasis*/
+    flex: 1 1 50px;  
 }
 
 #item-1{
@@ -43,8 +42,11 @@
 #item-3{
     /*Define como um item vai crescer no layout em comparação aos outros aqui pro exemplo o item-1 sempre vai crescer o 3 que os itens 2 e 3*/
     flex-grow: 1;
-    flex-basis: 300px;
+
+
     /*o flex-basis tem prioridade na frente de flex-grow*/
+    flex-basis: 300px;
+            
 }
 
 #item-4{
